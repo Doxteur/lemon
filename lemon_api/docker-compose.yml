@@ -1,0 +1,56 @@
+volumes:
+  volume_database_sql:
+
+services:
+  mysql:
+    image: mysql:8.0
+    networks:
+      - bdd
+    container_name: ${PROJECT_NAME}_mysql
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 'true'
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MYSQL_PASSWORD}
+    volumes:
+      - volume_database_sql:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    networks:
+      - public
+      - bdd
+    container_name: ${PROJECT_NAME}_phpmyadmin
+    environment:
+      PMA_HOST: mysql
+      PMA_PORT: 3306
+      PMA_ARBITRARY: 1
+    ports:
+      - "33010:80"
+    depends_on:
+      - mysql
+
+  web:
+    build: ./.docker/web
+    user: "1000:1000"
+    networks:
+      - public
+      - bdd
+    container_name: ${PROJECT_NAME}_web
+    volumes:
+      - ./site/back:/var/www/html/back
+      - ./.docker/virtualhost.conf:/etc/apache2/sites-available/000-default.conf
+      - ./.docker/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - mysql
+
+
+networks:
+  public:
+  bdd:

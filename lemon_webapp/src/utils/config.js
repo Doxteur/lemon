@@ -1,0 +1,8 @@
+export const REACT_APP_VERSION = "1.0.3";
+
+let REACT_APP_API_URL;
+let REACT_APP_STORAGE_URL;
+
+REACT_APP_API_URL = "http://localhost:3004";
+
+export { REACT_APP_API_URL, REACT_APP_STORAGE_URL };
