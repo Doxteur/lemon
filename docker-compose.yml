@@ -1,0 +1,45 @@
+version: "3.1"
+
+services:
+  mariadb:
+    image: mariadb:latest
+    restart: always
+    networks:
+      - lemon
+    environment:
+      MYSQL_ROOT_PASSWORD: nxhOBU4pVm9p2B1
+      MYSQL_DATABASE: lemon_db
+      MYSQL_USER: lemon
+      MYSQL_PASSWORD: nxhOBU4pVm9p2B1
+    volumes:
+      - ./:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  adminer:
+    image: adminer
+    networks:
+      - lemon
+    restart: always
+    ports:
+      - "8080:8080"
+  
+  web:
+    build: ./lemon_api
+    user: "1000:1000"
+    networks:
+      - lemon
+    container_name: ${PROJECT_NAME}_api
+    volumes:
+      - ./site/symf:/var/www/html/symf
+      - ./.docker/virtualhost.conf:/etc/apache2/sites-available/000-default.conf
+      - ./.docker/supervisord.conf:/etc/supervisor/conf.d/supervisord.conf
+    ports:
+      - "8010:80"
+      - "4430:443"
+    depends_on:
+      - mariadb
+
+networks:
+  lemon:
+    driver: bridge

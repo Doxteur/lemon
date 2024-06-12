@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active-sidebar {
+  border-right: 3px solid #7e80ff;
+}
+
+.dark-gradient {
+  background: rgb(27, 28, 36);
+  background: linear-gradient(
+    335deg,
+    rgba(27, 28, 36, 1) 0%,
+    rgba(58, 60, 75, 1) 100%
+  );
+}
+
+.active{
+  /* before:bg-fuchsia-400 */
+  background-color: #7e80ff;
+}

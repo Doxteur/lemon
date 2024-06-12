@@ -1,0 +1,83 @@
+[
+    {
+    "name": "Samsung Galaxy Tab S8 Ultra",
+    "ean": "8806092549633",
+    "description": "La Galaxy Tab S8 Ultra est une tablette premium avec un grand écran Super AMOLED de 14,6 pouces, idéale pour la productivité et le divertissement. Avec le S-Pen inclus, elle offre une expérience d'écriture et de dessin fluide.",
+    "specifications": {
+    "screen": "14,6 pouces, Super AMOLED, 2960 x 1848 pixels",
+    "processor": "Qualcomm Snapdragon 888",
+    "ram": "12 GB",
+    "storage": "256 GB, extensible via microSD jusqu'à 1 TB",
+    "camera": "13 MP (arrière), 8 MP (avant)",
+    "battery": "11,200 mAh",
+    "os": "Android 12",
+    "connectivity": "Wi-Fi 6, 5G, Bluetooth 5.2, USB-C"
+    },
+    "price": "1300 €"
+    },
+    {
+    "name": "Samsung Galaxy Tab S7+",
+    "ean": "8806090497270",
+    "description": "La Galaxy Tab S7+ combine puissance et élégance avec son écran Super AMOLED de 12,4 pouces et ses capacités multitâches avancées. Parfaite pour les professionnels et les créatifs.",
+    "specifications": {
+    "screen": "12,4 pouces, Super AMOLED, 2800 x 1752 pixels",
+    "processor": "Qualcomm Snapdragon 865+",
+    "ram": "8 GB",
+    "storage": "256 GB, extensible via microSD jusqu'à 1 TB",
+    "camera": "13 MP (arrière), 8 MP (avant)",
+    "battery": "10,090 mAh",
+    "os": "Android 11",
+    "connectivity": "Wi-Fi 6, 5G, Bluetooth 5.0, USB-C"
+    },
+    "price": "900 €"
+    },
+    {
+    "name": "Samsung Galaxy Tab A7 Lite",
+    "ean": "8806092215994",
+    "description": "La Galaxy Tab A7 Lite est une tablette compacte et légère, parfaite pour une utilisation quotidienne et pour les enfants. Son design portable facilite son transport.",
+    "specifications": {
+    "screen": "8,7 pouces, TFT, 1340 x 800 pixels",
+    "processor": "MediaTek MT8768T",
+    "ram": "3 GB",
+    "storage": "32 GB, extensible via microSD jusqu'à 1 TB",
+    "camera": "8 MP (arrière), 2 MP (avant)",
+    "battery": "5,100 mAh",
+    "os": "Android 11",
+    "connectivity": "Wi-Fi, Bluetooth 5.0, USB-C"
+    },
+    "price": "170 €"
+    },
+    {
+    "name": "Samsung Galaxy Tab S6 Lite",
+    "ean": "8806090491766",
+    "description": "La Galaxy Tab S6 Lite est une tablette polyvalente et abordable avec le S-Pen inclus, idéale pour la prise de notes et le dessin. Son écran immersif et ses performances solides en font un choix parfait pour les étudiants et les professionnels.",
+    "specifications": {
+    "screen": "10,4 pouces, TFT, 2000 x 1200 pixels",
+    "processor": "Exynos 9611",
+    "ram": "4 GB",
+    "storage": "64 GB, extensible via microSD jusqu'à 1 TB",
+    "camera": "8 MP (arrière), 5 MP (avant)",
+    "battery": "7,040 mAh",
+    "os": "Android 10",
+    "connectivity": "Wi-Fi, Bluetooth 5.0, USB-C"
+    },
+    "price": "350 €"
+    },
+    {
+    "name": "Samsung Galaxy Tab Active3",
+    "ean": "8806090703706",
+    "description": "Conçue pour les environnements exigeants, la Galaxy Tab Active3 est une tablette robuste avec un design résistant aux chocs et à l'eau. Elle est équipée d'une batterie remplaçable et d'un S-Pen intégré pour une productivité accrue.",
+    "specifications": {
+    "screen": "8 pouces, PLS TFT, 1920 x 1200 pixels",
+    "processor": "Exynos 9810",
+    "ram": "4 GB",
+    "storage": "64 GB, extensible via microSD jusqu'à 1 TB",
+    "camera": "13 MP (arrière), 5 MP (avant)",
+    "battery": "5,050 mAh, remplaçable",
+    "os": "Android 11",
+    "connectivity": "Wi-Fi 6, 4G LTE, Bluetooth 5.0, USB-C, NFC",
+    "resistance": "IP68 (eau et poussière), MIL-STD-810G (chocs)"
+    },
+    "price": "490 €"
+    }
+]
